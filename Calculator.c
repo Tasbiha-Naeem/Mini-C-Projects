@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<math.h>
 #include<windows.h>
-	void setColor(int color){
+    void setColor(int color){
     SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),color);
     }
     int factorial(int n){
@@ -158,7 +158,7 @@
 			printf("Answer is %lf",result);
 		    break;
 		}
-		case 5:
+		case 5:{
 		int factorial_number;
 		total_terms=0;
 		setColor(13);
@@ -177,7 +177,7 @@
 			setColor(13);
 			printf("The factorial of %d is %d.\n",factorial_number,fact);
 		}
-		break;
+		break;}
 		case 6:{
         double number;
         setColor(8);
@@ -232,7 +232,7 @@
 		     break;	
 		}
 		
-		case 10:
+		case 10:{
 			 angle_degree=0;
 			 angle_radian=0;
 			 setColor(5);
@@ -241,8 +241,8 @@
 			angle_radian=angle_degree*M_PI/180;
 			setColor(5);
 			printf("Cos(%.2lf degrees)=%.4lf.\n",angle_degree,cos(angle_radian));
-		break;
-		case 11:
+		break;}
+		case 11:{
 			 angle_degree=0;
 			 angle_radian=0;
 			 setColor(14);
@@ -251,7 +251,7 @@
 			angle_radian=angle_degree*M_PI/180;
 			setColor(14);
 			printf("Tan(%.2lf degrees)= %.4lf.\n",angle_degree,tan(angle_radian));
-		break;
+		break;}
 		case 12:{
 			int number1,number2;
 			setColor(12);
@@ -265,8 +265,8 @@
 			printf("The remainder is %d.",remainder);
 		    break;
 		}
-		default:
-		printf("Incorrect choice.\n");
+		default:{
+		printf("Incorrect choice.\n");}
 	}
 	 printf("Press 1 to continue or press 0 for exit.\n");
 	 scanf("%d",&exit);
