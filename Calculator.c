@@ -20,7 +20,7 @@
 		return (int)pow(x,y);
 	}
     int main(){
-   	double angle_degree;
+   double angle_degree;
     double angle_radian;
     int exit=1;
     setColor(14);
@@ -57,6 +57,10 @@
 	setColor(15);
 	printf("Enter the choice:\n");
 	scanf("%d",&choice);
+	if(choice==0){
+	printf("Program terminated".\n);
+	return 1;
+	}
 	int total_terms;
 	switch(choice){
 		case 1:
